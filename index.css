@@ -1,1 +1,44 @@
-/* Put your style information here! */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Century Gothic, AppleGothic, sanr-serif;
+}
+.main {
+  display: grid;
+  grid-gap: 80px;
+  grid-template-columns: 1fr 300px 300px 300px 300px 1fr;
+  grid-template-rows: 180px auto;
+}
+
+p {
+  margin-left: 120px;
+  margin-right: 120px;
+  font-size: 20px;
+  line-height: 150%;
+}
+.navbar{
+  grid-row: 1;
+  grid-column: 1 / 7;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 50px;
+}
+.navbar-nav {
+  margin-top: 50px;
+}
+.navbar-brand {
+  margin-top: 10px;
+  margin-left: 100px;
+}
+.nav-item {
+  font-size: 20px;
+  margin-right: 100px;
+}
+
+footer {
+  grid-column: 2 / 6;
+  grid-row: 13;
+  text-align: right;
+  margin-right: 400px;
+}
