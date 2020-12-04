@@ -1,0 +1,132 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Responsive Redesign</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../bootstrap.css">
+    <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+  </head>
+
+  <body>
+    <div class="main">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../home.html"><p style="font-size:40px;">My Portfolio</p></a>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="../persona/home.html">Project: Persona</a></li>
+            <li class="nav-item"><a class="nav-link" href="home.html">Project: Responsive Redesign</a></li>
+            <li class="nav-item"><a class="nav-link" href="../abtesting/home.html">Project: A/B Testing</a></li>
+            <li class="nav-item"><a class="nav-link" href="../iterative-design/home.html">Project: Iterative Design</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <h1 class="topic">PROJECT: Responsive Redesign</h1>
+    <img id="logo" src="./logo.png"/>
+    <div class="intro">
+      <p>In this project, I did a redesign for the website of Sakura, a local Japanese restaurant. My redesign solved the usability problems in the original design and provided a better visual presentation.
+        <br> My redesign is also made to be responsive, so that the layout of the page changes when users are viewing from screens with different sizes. This can make sure that the important information is always
+        displayed properly with any screen sizes.
+      </p>
+    </div>
+    <h1 class="problem">Usability Problems</h1>
+    <div class="original">
+      <a href="https://www.sakuraprovidence.com/">
+        <img id="website" alt="Qries" src="./website.png">
+      </a>
+      <figcaption>Fig1: A screenshot of the original interface</figcaption>
+    </div>
+    <div class="analysis">
+      <p style="margin-right: 0px;"> There are several usability problems with the original interface: (click on the image to navigate to the website) </p>
+      <ul>
+        <li class="ans usablity">The website uses many different fonts, which makes the overall visual design inconsistent.</li>
+        <li class="ans usablity">There are three 'Order Online' textbox on this page, and each of them link to a different destination, which would confuse the users.</li>
+        <li class="ans usablity">There is no padding between each elements, and it makes the website seem crowded.</li>
+        <li class="ans usablity">This original interface has no responsive design at all, so the layout would not change with different screen size.</li>
+      </ul>
+      <p style="margin-right: 0px;">There are also a few accessibility concerns detected, mainly about low contrast for certain region in the website and redundant title text, and the screen reader could not
+        really interpret the webpage well as most information displayed is quite messy.</p>
+    </div>
+    <h1 class="lowfi">Low-Fidelity Prototype</h1>
+    <div class="div1">
+      <p>To redesign the interface, I first created a low-fidelity prototype with Balsamiq. I tried to keep all the important information and links, but at the same time made improvements based on the usability problems
+        detected earlier.
+      <br>Below is how my low-fidelity prototype looks like.</p>
+      <div style = "margin-left: 80px;">
+        <figure class="lowfifig">
+          <img src="lowfi1.png" height="460" style="vertical-align:top;"/>
+        </figure>
+        <figure class="lowfifig">
+          <img src="lowfi2.png" height="460" style="vertical-align:top;"/>
+        </figure>
+        <figure class="lowfifig">
+          <img src="lowfi3.png" height="460" style="vertical-align:top;"/>
+        </figure>
+        <figcaption style="margin-left: 40px; margin-right: 180px;">Fig 2: Low-Fidelity Prototype for the interface. From left to right: desktop display, mobile display and tablet display </figcaption>
+      </div>
+      <p>Compared to the original interface, my low-fidelity prototype has made a few significant changes:</p>
+      <ul>
+        <li class="ans">I made the different sectors more structured and the content more formatted.</li>
+        <li class="ans">I added padding between each component of the page to make the displayed information more understandable.</li>
+        <li class="ans">I designed the interface so that they are responsive of three different screen sizes: laptop, tablet and cell phone. </li>
+      </ul>
+    </div>
+    <h1 class="highfi">High-Fidelity Prototype</h1>
+    <div class="div2">
+      <p>After the low-fidelity prototype, I also made a high-fidelity prototype for this interface using Figma.</p>
+      <div style = "margin-left: 80px;">
+        <figure class="highfifig">
+          <img src="highfi1.png" height="410" style="vertical-align:top;"/>
+        </figure>
+        <figure class="highfifig">
+          <img src="highfi2.png" height="410" style="vertical-align:top;"/>
+        </figure>
+        <figure class="highfifig">
+          <img src="highfi3.png" height="410" style="vertical-align:top;"/>
+        </figure>
+        <figcaption style="margin-left: 40px; margin-right: 180px;">Fig 3: High-Fidelity Prototype for the interface. From left to right: desktop display, mobile display and tablet display </figcaption>
+      </div>
+      <p> For the high-fidelity prototype, I further designed the color and other visual components of the webpage: </p>
+      <ul>
+        <li class="ans"> I used a consistent font for all components in the interface. </li>
+        <li class="ans"> I designed a new logo for the restaurant to better demonstrate its popular dishes. </li>
+        <li class="ans"> I redesigned the color theme to make it more aesthetically appealing. </li>
+      </ul>
+    </div>
+    <h1 class="styleguide">Visual Design Style Guide</h1>
+    <div class="div3">
+      <p>For my redesign of the interface, I also created a visual design style guide for the important content of the interface, including font, buttons and navigations.</p>
+      <img id="visualdesign" src="./visualdesign.png" style="width: 50%; margin-left: 200px;">
+    </div>
+    <h1 class="responsive">Responsive Redesign</h1>
+    <div class="div4">
+      <p>I made my redesign for the interface into an actual webpage, and I also made it responsive, so that the page provides a nice presentation on screens with different sizes. It accomplished all of
+      the improvements proposed during prototyping, and it resembles most of the visual style as designed in high-fidelity prototype. (Click on the image to navigate to the redesigned website)</p>
+      <div style = "margin-left: 80px;">
+        <figure class="responsivefig">
+          <a href="./sakura.html">
+          <img src="responsive1.png" height="400" style="vertical-align:top;"/>
+        </a>
+        </figure>
+        <figure class="responsivefig">
+          <a href="./sakura.html">
+          <img src="responsive2.png" height="400" style="vertical-align:top;"/>
+          </a>
+        </figure>
+        <figure class="responsivefig">
+          <a href="./sakura.html">
+          <img src="responsive3.png" height="400" style="vertical-align:top;"/>
+          </a>
+        </figure>
+        <figcaption style="margin-left: 40px; margin-right: 180px;">Fig 4: Responsive Redesign Prototype for the interface. From left to right: desktop display, mobile display and tablet display </figcaption>
+      </div>
+    </div>
+  </div>
+    <footer>
+      @CSCI 1300: UI/UX, Fall 2020
+    </footer>
+  </body>
+</html>

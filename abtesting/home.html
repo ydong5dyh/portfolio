@@ -1,0 +1,134 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>A/B Testing</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../bootstrap.css">
+    <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+  </head>
+
+  <body>
+    <div class="main">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../home.html"><p style="font-size:40px;">My Portfolio</p></a>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="../persona/home.html">Project: Persona</a></li>
+            <li class="nav-item"><a class="nav-link" href="../responsive-redesign/home.html">Project: Responsive Redesign</a></li>
+            <li class="nav-item"><a class="nav-link" href="home.html">Project: A/B Testing</a></li>
+            <li class="nav-item"><a class="nav-link" href="../iterative-design/home.html">Project: Iterative Design</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <h1 class="topic">PROJECT: A/B Testing</h1>
+    <img id="logo" src="./top.png"/>
+    <div class="intro">
+      <p>In this project, I did A/B testing with 2 versions of an online cactus shopping website.
+        <br> I collected data to test whether there's statistically significant differences in time to completion and return rate between the 2 versions.
+      </p>
+    </div>
+    <!-- <h1 class="problem">Usability Problems</h1>
+    <div class="original">
+      <a href="https://www.sakuraprovidence.com/">
+        <img id="website" alt="Qries" src="./website.png">
+      </a>
+      <figcaption>Fig1: A screenshot of the original interface</figcaption>
+    </div>
+    <div class="analysis">
+      <p style="margin-right: 0px;"> There are several usability problems with the original interface: (click on the image to navigate to the website) </p>
+      <ul>
+        <li class="usablity">The website uses many different fonts, which makes the overall visual design inconsistent.</li>
+        <li class="usablity">There are three 'Order Online' textbox on this page, and each of them link to a different destination, which would confuse the users.</li>
+        <li class="usablity">There is no padding between each elements, and it makes the website seem crowded.</li>
+        <li class="usablity">This original interface has no responsive design at all, so the layout would not change with different screen size.</li>
+      </ul>
+      <p style="margin-right: 0px;">There are also a few accessibility concerns detected, mainly about low contrast for certain region in the website and redundant title text, and the screen reader could not
+        really interpret the webpage well as most information displayed is quite messy.</p>
+    </div> -->
+    <h1 class="design">Website Design</h1>
+    <div class="div1">
+      <p>We first create 2 versions of the same website.
+      <br>This is version A of the website:</p>
+      <div style = "margin-left: 80px;">
+        <figure class="versionfig">
+          <img src="A.png" height="460" style="vertical-align:top;"/>
+        </figure>
+      </div>
+    <p> I've made some changes to the interface and created version B:</p>
+        <div style = "margin-left: 80px;">
+        <figure class="versionfig">
+          <img src="B.png" height="460" style="vertical-align:top;"/>
+        </figure>
+      </div>
+      <p>Compared to version A, the version B has a few differences:</p>
+      <ul>
+        <li class="ans">I changed the text on the button from '# in cart' to 'Add to cart'.</li>
+        <li class="ans">I moved the position of price to be after the product descriptions.</li>
+        <li class="ans">I changed the text next to the buttons to display the number of product in cart. </li>
+      </ul>
+    </div>
+
+    <h1 class="hypothesis">My Hypotheses</h1>
+    <div class="div2">
+      <p>I have made null hypothesis and alternative hypothesis for each metric we study: </p>
+      <p>Metric: Time to completion</p>
+      <p> Time to complete is the time a use takes to finish the workflow. </p>
+      <ul>
+        <li class="ans"> Null hypothesis: The time to completion for version A is equal to the time to completion for version B.</li>
+        <li class="ans"> Alternative hypothesis: The time to completion for version B is shorter than the time to completion for version A, because the 'Add to cart' buttons in B are more prominent as the button text indicates the action more clearly.</li>
+      </ul>
+      <p>Metric: Return rate</p>
+      <p> Return rate is the percentage of sessions where users return to the workflow after going to the check out page. </p>
+      <ul>
+        <li class="ans"> Null hypothesis: The return rate for version A is equal to the return rate for version B.</li>
+        <li class="ans"> Alternative hypothesis: The return rate for version B is higher than the return rate for version A, because prices are not as prominent, since users goal is to add 150 dollar worth of purchase to cart, they will likely return more if they can't clearly the prices.</li>
+      </ul>
+    </div>
+
+    <h1 class="stats">Data Collection & Analysis</h1>
+    <div class="div3">
+      <p>After I made the 2 versions of the website. I collect data through the studio, then I cleaned the user session logs. For my analysis, I used Excel to calculate time to completion and record whether the user returned for each session from the logs.
+        <br>I calculated time to completion by subtracting the timestamp of end of session from the timestamp of start of session. And I determined whether users returned by looking at if they return to page A/B after visiting page C.</p>
+      <p>Metric: Time to completion</p>
+      <ul>
+        <li class="ans"> Version A: The mean is 77488.6. </li>
+        <li class="ans"> Version B: The mean is 53680.1. </li>
+      </ul>
+      <p> I used t-test to measure if there is a statistically significant difference, after calculation, t-score is -0.619 and p-value is 0.271.
+      <br> Because p-value is larger than 0.05, we fail to reject null hypothesis, the difference of time to completion between 2 versions is not statistically significant.</p>
+      <p>Metric: Return rate</p>
+      <ul>
+        <li class="ans"> Version A: Out of 15 sessions, users return in 9 sessions, not return in 6 sessions. Return rate is 0.600.</li>
+        <li class="ans"> Version B: Out of 9 sessions, users return in 7 sessions, not return in 2 sessions. Return rate is 0.778.</li>
+      </ul>
+      <p> I used chi-square test to measure if there is a statistically significant difference, after calculation, chi-square score is 0.800 and p-value is 0.371.
+      <br> Because p-value is larger than 0.05, we fail to reject null hypothesis, the difference of return rate between 2 versions is not statistically significant.</p>
+    </div>
+
+    <h1 class="results">Results & Reflections</h1>
+    <div class="div4">
+      <p> Version B shows shorter time to completion and higher return rate than version A, however neither of the test result are statistically significant.
+      <br> The placement of prices on version B makes it hard for advertisers to read, thus they return more when they add items to the cart. The buttons on version B are more indicative of their functionalities and users are likely to make decisions to add items more quickly.</p>
+      <p> I've also created an infographic that describes all the results and conclusions from each statistical tests.</p>
+      <figure class="infographic">
+        <img src="infographic.png" height="1500" style="vertical-align:top;"/>
+      </figure>
+      <p> My takeways on A/B testing from this project are:</p >
+      <ul>
+        <li class="ans"> A/B testing is a useful technique when we want to quantitatively measure differences in user's behaviors on two interfaces. It also has a lot of real-world aaplications.</li>
+        <li class="ans"> In A/B testing, it's important to focus on the important metrics we are interested in (in this study, we focused on time to completion and return rate) and use correct methods to measure whether there are statistically signifcant differences between metrics of 2 interfaces.</li>
+        <li class="ans"> Larger sample size will help detect the significance of the differences more accurately.</li>
+        <li class="ans"> Even small interface changes can lead to changes in users' behavior, and we can use data from these studies to support our design decisions.</li>
+      </ul>
+    </div>
+
+    </div>
+    <footer>
+      @CSCI 1300: UI/UX, Fall 2020
+    </footer>
+  </body>
+</html>

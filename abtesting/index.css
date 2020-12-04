@@ -1,0 +1,115 @@
+/* Put your style information here! */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Century Gothic, AppleGothic, sanr-serif;
+}
+.main {
+  display: grid;
+  grid-gap: 80px;
+  grid-template-columns: 1fr 300px 300px 300px 300px 1fr;
+  grid-template-rows: 180px 250px 150px 10px auto 10px auto 10px auto 10px auto 30px;
+}
+h1 {
+  grid-column: 2 / 4;
+  text-align: left;
+  font-size: 40px;
+  margin-left: 120px;
+}
+p {
+  margin-left: 120px;
+  margin-right: 120px;
+  font-size: 20px;
+  line-height: 150%;
+}
+.navbar{
+  grid-row: 1;
+  grid-column: 1 / 7;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 50px;
+}
+.navbar-nav {
+  margin-top: 50px;
+}
+.navbar-brand {
+  margin-top: 10px;
+  margin-left: 100px;
+}
+.nav-item {
+  font-size: 20px;
+  margin-right: 100px;
+}
+.ans {
+  margin-left: 120px;
+  margin-right: 120px;
+  font-size: 20px;
+  line-height: 150%;
+}
+.topic {
+  grid-column: 4 / 5;
+  grid-row: 2;
+  margin-left: 0px;
+  font-size: 70px;
+}
+.intro {
+  margin-left: 260px;
+  margin-right: 100px;
+  grid-column: 3 / 6;
+  grid-row: 3;
+}
+.design {
+  border: 1px dotted;
+  grid-row: 4;
+}
+.div1 {
+  grid-column: 2 / 6;
+  grid-row: 5;
+}
+.hypothesis {
+  border: 1px dotted;
+  grid-row: 6;
+}
+.div2 {
+  grid-column: 2 / 6;
+  grid-row: 7;
+}
+.stats {
+  border: 1px dotted;
+  grid-row: 8;
+}
+.div3 {
+  grid-column: 2 / 6;
+  grid-row: 9;
+}
+.results {
+  border: 1px dotted;
+  grid-row: 10;
+}
+
+.div4 {
+  grid-column: 2 / 6;
+  grid-row: 11;
+}
+.versionfig {
+  display: inline-block;
+  margin: 10px 20px 10px 20px;
+}
+
+.infographic {
+  display: inline-block;
+  margin: 10px 350px 10px 350px;
+}
+#logo {
+  grid-column: 2 / 5;
+  grid-row: 2;
+  height: 350px;
+  width: auto;
+  margin: 100px 90px 100px 250px;
+}
+footer {
+  grid-column: 2 / 6;
+  grid-row: 12;
+  text-align: right;
+  margin-right: 400px;
+}
