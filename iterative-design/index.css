@@ -8,25 +8,23 @@ body {
   display: grid;
   grid-gap: 80px;
   grid-template-columns: 1fr 300px 300px 300px 300px 1fr;
-  grid-template-rows: 180px 250px 350px 10px auto 10px auto 10px auto 10px auto 10px auto 30px;
+  grid-template-rows: 250px 350px 10px auto 10px auto 10px auto 10px auto 10px auto 30px;
 }
 .navbar{
-  grid-row: 1;
-  grid-column: 1 / 7;
-  margin-left: 10px;
-  margin-right: 10px;
   margin-bottom: 50px;
-}
-.navbar-nav {
-  margin-top: 50px;
 }
 .navbar-brand {
   margin-top: 10px;
-  margin-left: 100px;
+  margin-left: 10px;
 }
 .nav-item {
   font-size: 20px;
-  margin-right: 100px;
+  margin-right: 50px;
+}
+.brand {
+  font-size: 40px;
+  margin-left: 30px;
+  margin-right: 0px;
 }
 h1 {
   grid-column: 2 / 4;
@@ -59,7 +57,7 @@ figcaption {
 }
 .topic {
   grid-column: 4 / 5;
-  grid-row: 2;
+  grid-row: 1;
   margin-left: 0px;
   font-size: 70px;
 }
@@ -67,15 +65,15 @@ figcaption {
   margin-left: 260px;
   margin-right: 100px;
   grid-column: 3 / 6;
-  grid-row: 3;
+  grid-row: 2;
 }
 .sketch {
   border: 1px dotted;
-  grid-row: 4;
+  grid-row: 3;
 }
 .original {
   grid-column: 2 / 6;
-  grid-row: 5;
+  grid-row: 4;
 }
 .sketchfig {
   display: inline-block;
@@ -84,39 +82,39 @@ figcaption {
 }
 .analysis {
   grid-column: 2 / 4;
-  grid-row: 5;
+  grid-row: 4;
 }
 .lowfi {
   border: 1px dotted;
-  grid-row: 6;
+  grid-row: 5;
 }
 .div1 {
   grid-column: 2 / 6;
-  grid-row: 7;
+  grid-row: 6;
 }
 .highfi {
   border: 1px dotted;
-  grid-row: 8;
+  grid-row: 7;
 }
 .div2 {
   grid-column: 2 / 6;
-  grid-row: 9;
+  grid-row: 8;
 }
 .usertesting {
   border: 1px dotted;
-  grid-row: 10;
+  grid-row: 9;
 }
 .div3 {
   grid-column: 2 / 6;
-  grid-row: 11;
+  grid-row: 10;
 }
 .result {
   border: 1px dotted;
-  grid-row: 12;
+  grid-row: 11;
 }
 .div4 {
   grid-column: 2 / 6;
-  grid-row: 13;
+  grid-row: 12;
 }
 .lowfifig {
   display: inline-block;
@@ -130,13 +128,27 @@ figcaption {
 }
 #logo {
   grid-column: 2 / 5;
-  grid-row: 2;
+  grid-row: 1;
   width: 50%;
   margin: 200px 60px 100px 140px;
 }
 footer {
   grid-column: 2 / 6;
-  grid-row: 14;
+  grid-row: 13;
   text-align: right;
   margin-right: 400px;
+}
+@media(max-width: 600px)
+{
+  .brand{
+    font-size:25px;
+    margin-left: 10px;
+  }
+  .navbar-brand {
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+  .nav-item {
+    font-size:15px;
+  }
 }

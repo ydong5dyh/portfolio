@@ -8,9 +8,8 @@ body {
   display: grid;
   grid-gap: 80px;
   grid-template-columns: 1fr 300px 300px 300px 300px 1fr;
-  grid-template-rows: 180px auto;
+  grid-template-rows: auto auto auto 30px;
 }
-
 p {
   margin-left: 120px;
   margin-right: 120px;
@@ -18,27 +17,88 @@ p {
   line-height: 150%;
 }
 .navbar{
-  grid-row: 1;
-  grid-column: 1 / 7;
-  margin-left: 10px;
-  margin-right: 10px;
   margin-bottom: 50px;
-}
-.navbar-nav {
-  margin-top: 50px;
 }
 .navbar-brand {
   margin-top: 10px;
-  margin-left: 100px;
+  margin-left: 10px;
 }
 .nav-item {
   font-size: 20px;
-  margin-right: 100px;
+  margin-right: 50px;
+}
+.brand {
+  font-size: 40px;
+  margin-left: 30px;
+  margin-right: 0px;
+}
+.intro {
+  grid-row: 1;
+  grid-column: 2 / 5;
+  font-size: 40px;
+  margin-bottom: 100px;
+}
+.image {
+  display: block;
+  width: 700px;
+  height: 550px;
+  object-fit: contain;
+  background-color: #DDDDDD;
+  margin-left: 100px;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+#billgates {
+  grid-column: 5;
+  grid-row: 1;
+  height: 500px;
+  width: auto;
+  margin-top: 50px;
+}
 footer {
   grid-column: 2 / 6;
-  grid-row: 13;
+  grid-row: 4;
   text-align: right;
   margin-right: 400px;
+}
+.persona {
+  grid-column: 2/4;
+  grid-row: 2;
+}
+.responsive {
+  grid-column: 4/6;
+  grid-row: 2;
+}
+.abtesting {
+  grid-column: 2/4;
+  grid-row: 3;
+}
+.iterative {
+  grid-column: 4/6;
+  grid-row: 3;
+}
+@media(max-width: 600px)
+{
+  .brand{
+    font-size:25px;
+    margin-left: 10px;
+  }
+  .navbar-brand {
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+  .nav-item {
+    font-size:15px;
+  }
 }

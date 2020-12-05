@@ -1,0 +1,40 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Century Gothic, AppleGothic, sanr-serif;
+}
+.main {
+  display: grid;
+  grid-gap: 80px;
+  grid-template-columns: 1fr 300px 300px 300px 300px 1fr;
+  grid-template-rows: auto auto auto 30px;
+}
+p {
+  margin-left: 120px;
+  margin-right: 120px;
+  font-size: 20px;
+  line-height: 150%;
+}
+.navbar{
+  margin-bottom: 50px;
+}
+.navbar-brand {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.nav-item {
+  font-size: 20px;
+  margin-right: 50px;
+}
+.brand {
+  font-size: 40px;
+  margin-left: 30px;
+  margin-right: 0px;
+}
+.intro {
+  grid-row: 1;
+  grid-column: 2 / 5;
+  font-size: 40px;
+  margin-bottom: 100px;
+}
