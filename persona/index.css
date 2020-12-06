@@ -221,7 +221,7 @@ footer {
     grid-row: 3;
   }
   .interface {
-    font-size: 30px;
+    font-size: 28px;
     border: 1px dotted;
     grid-row: 4;
   }
@@ -230,7 +230,7 @@ footer {
     grid-row: 5;
   }
   .interview {
-    font-size: 30px;
+    font-size: 28px;
     border: 1px dotted;
     grid-row: 6;
   }
@@ -239,7 +239,7 @@ footer {
     grid-row: 7;
   }
   .persona {
-    font-size: 30px;
+    font-size: 28px;
     border: 1px dotted;
     grid-row: 8;
   }
@@ -253,7 +253,7 @@ footer {
     grid-row: 10;
   }
   .storyboard {
-    font-size: 30px;
+    font-size: 28px;
     border: 1px dotted;
     grid-row: 11;
   }
@@ -262,7 +262,7 @@ footer {
     grid-row: 12;
   }
   .storyrow {
-    margin: 0px 20vw 0px 20vw;
+    margin: 0px auto 0px 15vw;
   }
   .storyfig {
     height: 70vw;
@@ -283,16 +283,16 @@ footer {
     margin: 30px 10vw 0px 10vw;
   }
   #persona1 {
-    width: 70vw;
-    height: 80vw;
+    width: 80vw;
+    height: 90vw;
     float: center;
-    margin: 0px 20vw 0px 20vw;
+    margin: 0px 10vw 0px 10vw;
   }
   #persona2 {
-    width: 70vw;
-    height: 80vw;
+    width: 80vw;
+    height: 90vw;
     float: center;
-    margin: 0px 20vw auto 20vw;
+    margin: 0px 10vw auto 10vw;
   }
   #sketchcaption {
     margin: auto 20vw 50px 20vw;

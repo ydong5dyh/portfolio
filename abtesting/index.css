@@ -111,9 +111,36 @@ footer {
   text-align: right;
   margin-right: 400px;
 }
-
+.figdiv {
+  margin-left: 80px;
+}
+.websiteimg {
+  height: 460px;
+  vertical-align: top;
+  margin: auto;
+}
+.infofig {
+  height: 1500px;
+  vertical-align: top;
+}
 @media(max-width: 600px)
 {
+  .main {
+    grid-gap: 50px;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto 10px auto 10px auto 10px auto 10px auto auto;
+  }
+  h1 {
+    grid-column: 1;
+    text-align: left;
+    font-size: 25px;
+    margin-left: 10vw;
+  }
+  p {
+    margin-left: 10vw;
+    margin-right: 15vw;
+    font-size: 15px;
+  }
   .brand{
     font-size:25px;
     margin-left: 10px;
@@ -124,5 +151,99 @@ footer {
   }
   .nav-item {
     font-size:15px;
+  }
+  .ans {
+    margin-left: 5vw;
+    margin-right: 10vw;
+    font-size: 15px;
+  }
+  .topic {
+    grid-column: 1;
+    grid-row: 2;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-size: 40px;
+  }
+  .intro {
+    margin-left: 0vw;
+    margin-right: 0vw;
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .design {
+    font-size: 28px;
+    border: 1px dotted;
+    grid-row: 4;
+  }
+  .div1 {
+    grid-column: 1;
+    grid-row: 5;
+  }
+  .hypothesis {
+    font-size: 28px;
+    border: 1px dotted;
+    grid-row: 6;
+  }
+  .div2 {
+    grid-column: 1;
+    grid-row: 7;
+  }
+  .stats {
+    font-size: 28px;
+    border: 1px dotted;
+    grid-row: 8;
+  }
+  .div3 {
+    grid-column: 1;
+    grid-row: 9;
+  }
+  .results {
+    font-size: 28px;
+    border: 1px dotted;
+    grid-row: 10;
+  }
+
+  .div4 {
+    grid-column: 1;
+    grid-row: 11;
+  }
+  .versionfig {
+    display: inline-block;
+    width: 60vw;
+    height: 40vw;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+
+  .infographic {
+    display: inline-block;
+    margin: 10px 15vw 10px 15vw;
+  }
+  #logo {
+    grid-column: 1;
+    grid-row: 1;
+    width: 40vw;
+    height: 40vw;
+    margin: 0px 30vw 0px 30vw;
+  }
+  footer {
+    grid-column: 1;
+    grid-row: 12;
+    text-align: center;
+    font-size: 10px;
+    margin: 0px;
+  }
+  .figdiv {
+    margin-left: 10vw;
+  }
+
+  .websiteimg {
+    height: 50vw;
+    width: 70vw;
+  }
+  .infofig {
+    width: 70vw;
+    height: 120vw;;
+    vertical-align: top;
   }
 }
