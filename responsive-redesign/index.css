@@ -177,7 +177,7 @@ footer {
     grid-column: 1;
     grid-row: 1;
     width: 60vw;
-    height: 50vw;
+    height: auto;
     margin: 0px 20vw 0px 20vw;
   }
   p {
@@ -287,13 +287,13 @@ footer {
   }
   img {
     width: 65vw;
-    height: 65vw;
+    height: auto;
     object-fit: contain;
   }
   #website {
     grid-column: 1;
     width: 70vw;
-    height: 60vw;
+    height: auto;
     margin: 30px 15vw 20px 15vw;
     border: 1px dotted black;
   }
@@ -320,7 +320,7 @@ footer {
   }
   .guidefig{
     width: 70vw;
-    height: 60vw;
+    height: auto;
     margin: 0px 15vw 0px 15vw;
   }
 }

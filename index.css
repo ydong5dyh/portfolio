@@ -49,9 +49,9 @@ p {
 }
 .overlay {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-left: 170px;
-  font-size: 20px;
+  font-size: 30px;
 }
 #billgates {
   grid-column: 6;
@@ -131,7 +131,7 @@ footer {
   }
   .image {
     width: 80vw;
-    height: 60vw;
+    height: auto;
     margin-left: 10vw;
     margin-right: 10vw;
   }

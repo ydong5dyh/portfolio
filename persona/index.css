@@ -192,7 +192,7 @@ footer {
     grid-column: 1;
     grid-row: 1;
     width: 40vw;
-    height: 40vw;
+    height: auto;
     margin: 0px 30vw 0px 30vw;
   }
   p {
@@ -265,7 +265,7 @@ footer {
     margin: 0px auto 0px 15vw;
   }
   .storyfig {
-    height: 70vw;
+    height: auto;
     width: 70vw;
     margin: auto;
   }
@@ -279,22 +279,23 @@ footer {
   }
   #sketch {
     width: 80vw;
-    height: 45vw;
+    height: auto;
     margin: 30px 10vw 0px 10vw;
   }
   #persona1 {
     width: 80vw;
-    height: 90vw;
+    height: auto;
     float: center;
     margin: 0px 10vw 0px 10vw;
   }
   #persona2 {
     width: 80vw;
-    height: 90vw;
+    height: auto;
     float: center;
     margin: 0px 10vw auto 10vw;
   }
   #sketchcaption {
+    font-size: 10px;
     margin: auto 20vw 50px 20vw;
   }
   #personabackground1 {
@@ -317,7 +318,7 @@ footer {
   }
   img {
     width: 65vw;
-    height: 65vw;
+    height: auto;
   }
   footer {
     grid-column: 1;

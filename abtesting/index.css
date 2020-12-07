@@ -210,8 +210,8 @@ footer {
   .versionfig {
     display: inline-block;
     width: 60vw;
-    height: 40vw;
-    margin: auto;
+    height: auto;
+    margin: 0px auto 0px 5vw;
     margin-bottom: 50px;
   }
 
@@ -222,9 +222,9 @@ footer {
   #logo {
     grid-column: 1;
     grid-row: 1;
-    width: 40vw;
-    height: 40vw;
-    margin: 0px 30vw 0px 30vw;
+    width: 30vw;
+    height: auto;
+    margin: 0px 35vw 0px 35vw;
   }
   footer {
     grid-column: 1;
@@ -238,12 +238,12 @@ footer {
   }
 
   .websiteimg {
-    height: 50vw;
+    height: auto;
     width: 70vw;
   }
   .infofig {
     width: 70vw;
-    height: 120vw;;
+    height: auto;;
     vertical-align: top;
   }
 }

@@ -120,11 +120,58 @@ figcaption {
   display: inline-block;
   margin: 10px 20px 10px 20px;
 }
-
+.sketchgroup {
+  margin-left: 80px;
+  margin-top: 30px;
+}
+.sk1 {
+  height: 270px;
+  vertical-align: top;
+}
+.sk2 {
+  height: 319px;
+  vertical-align: top;
+}
+.sk3 {
+  height: 316px;
+  vertical-align: top;
+}
+.sk4 {
+  height: 285px;
+  vertical-align: top;
+}
+.sketchcaption {
+  margin-left: 40px;
+  margin-right: 180px;
+}
+.lf1 {
+  height: 530px;
+  vertical-align: top;
+  padding-left: 100px;
+}
+.protcaption {
+  margin-left: 40px;
+  margin-right: 180px;
+}
+.protfig {
+  margin-left: 80px;
+}
+.hf1 {
+  height: 600px;
+  vertical-align: top;
+  padding-left: 100px;
+}
+.hf2 {
+  height: 600px;
+  vertical-align: top;
+  padding-left: 140px;
+}
 .videoresponse {
   display: inline-block;
   margin: 10px 0px 10px 0px;
   border: 1px dotted;
+  height: 230px;
+  vertical-align:top;
 }
 #logo {
   grid-column: 2 / 5;
@@ -150,5 +197,188 @@ footer {
   }
   .nav-item {
     font-size:15px;
+  }
+
+  .main {
+    grid-gap: 50px;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto 10px auto auto 10px auto 10px auto 10px auto 10px auto auto;
+  }
+  h1 {
+    grid-column: 1;
+    text-align: left;
+    font-size: 25px;
+    margin-left: 10vw;
+  }
+  h2 {
+    grid-column: 1;
+    text-align: left;
+    font-size: 20px !important; 
+    margin-left: 10vw;
+  }
+  p {
+    margin-left: 10vw;
+    margin-right: 15vw;
+    font-size: 15px;
+  }
+  .ans {
+    margin-left: 5vw;
+    margin-right: 10vw;
+    font-size: 15px;
+  }
+  figcaption {
+    border: 1px dotted gray;
+    text-align: center;
+    margin: auto 10vw auto 10vw;
+    font-size: 10px;
+  }
+  .topic {
+    grid-column: 1;
+    grid-row: 2;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-size: 40px;
+  }
+  .intro {
+    margin-left: 0vw;
+    margin-right: 0vw;
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .sketch {
+    font-size: 28px;
+    border: 1px dotted;
+    grid-row: 4;
+  }
+  .original {
+    grid-column: 1;
+    grid-row: 5;
+  }
+  .sketchfig {
+    display: inline-block;
+    margin: 0px 0px 10px 0px;
+    border: 1px dotted;
+  }
+  .analysis {
+    grid-column: 1;
+    grid-row: 6;
+  }
+  .lowfi {
+    font-size: 28px;
+    border: 1px dotted;
+    grid-row: 7;
+  }
+  .div1 {
+    grid-column: 1;
+    grid-row: 8;
+  }
+  .highfi {
+    font-size: 28px;
+    border: 1px dotted;
+    grid-row: 9;
+  }
+  .div2 {
+    grid-column: 1;
+    grid-row: 10;
+  }
+  .usertesting {
+    font-size: 28px;
+    border: 1px dotted;
+    grid-row: 11;
+  }
+  .div3 {
+    grid-column: 1;
+    grid-row: 12;
+  }
+  .result {
+    font-size: 28px;
+    border: 1px dotted;
+    grid-row: 13;
+  }
+  .div4 {
+    grid-column: 1;
+    grid-row: 14;
+  }
+  .lowfifig {
+    display: inline-block;
+    margin: 0px 0px 0px 0px;
+  }
+  .sketchgroup {
+    margin-left: 15vw;
+    margin-top: 30px;
+  }
+  .sk1 {
+    width: 70vw;
+    height: auto;
+    vertical-align: top;
+  }
+  .sk2 {
+    width: 70vw;
+    height: auto;
+    vertical-align: top;
+  }
+  .sk3 {
+    width: 70vw;
+    height: auto;
+    vertical-align: top;
+  }
+  .sk4 {
+    width: 70vw;
+    height: auto;
+    vertical-align: top;
+  }
+  .sketchcaption {
+    margin-left: 10vw;
+    margin-right: 20vw;
+  }
+  .lf1 {
+    width: 70vw;
+    height: auto;
+    vertical-align: top;
+    padding-left: 0vw;
+    margin-left: 15vw;
+  }
+  .protcaption {
+    margin-left: 20vw;
+    margin-right: 20vw;
+  }
+  .protfig {
+    margin-left: 0px;
+  }
+  .hf1 {
+    width: 70vw;
+    height: auto;
+    vertical-align: top;
+    padding-left: 0vw;
+    margin-left: 15vw;
+  }
+  .hf2 {
+    width: 70vw;
+    height: auto;
+    vertical-align: top;
+    padding-left: 0vw;
+    margin-left: 15vw;
+  }
+  .videoresponse {
+    display: inline-block;
+    margin: 10px 15vw 10px 15vw;
+    border: 1px dotted;
+    width: 70vw;
+    height: auto;
+    vertical-align:top;
+  }
+  #logo {
+    grid-column: 1;
+    grid-row: 1;
+    width: 70vw;
+    height: auto;
+    margin: 0px 15vw 0px 15vw;
+  }
+  footer {
+    grid-column: 1;
+    grid-row: 15;
+    text-align: center;
+    font-size: 10px;
+    margin: 0px;
   }
 }
